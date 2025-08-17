@@ -6,12 +6,12 @@ sequenceDiagram
     activate palvelin
     palvelin-->>selain: HTML-tiedosto (spa-versio)
     deactivate palvelin
-
+    
     selain->>palvelin: GET https://studies.cs.helsinki.fi/exampleapp/main.css
     activate palvelin
     palvelin-->>selain: CSS-tiedosto
     deactivate palvelin
-
+    
     selain->>palvelin: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
     activate palvelin
     palvelin-->>selain: JavaScript-tiedosto (spa.js)
